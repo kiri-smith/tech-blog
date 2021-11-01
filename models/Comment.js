@@ -14,21 +14,21 @@ Comment.init(
         comment_text: {
             type: DataTypes.STRING,
             allowNull: false,
-            validate: { len: [1] }, //at least 1 character in post
+        },
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW,
         },
         user_id: {
-            //user
             type: DataTypes.INTEGER,
-            allowNull: false,
             references: {
                 model: "user",
                 key: "id",
             },
         },
         post_id: {
-            //post
             type: DataTypes.INTEGER,
-            allowNull: false,
             references: {
                 model: "post",
                 key: "id",
@@ -37,10 +37,11 @@ Comment.init(
     },
     {
         sequelize,
+        timestamps: false,
         freezeTableName: true,
         underscored: true,
         modelName: "comment",
     }
 );
-//export
+
 module.exports = Comment;
