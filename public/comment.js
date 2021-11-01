@@ -1,4 +1,4 @@
-const commentFormHandler = async (event) => {
+const newCommentFormHandler = async (event) => {
     event.preventDefault();
 
     const commentText = document.querySelector('#comment-text').value.trim();
@@ -18,7 +18,7 @@ const commentFormHandler = async (event) => {
     }
 };
 
-const removeCommentHandler = async (event) => {
+const deleteCommentHandler = async (event) => {
 
     if (event.target.hasAttribute('data-id')) {
         const id = event.target.getAttribute('data-id');
@@ -37,8 +37,8 @@ const removeCommentHandler = async (event) => {
 
 document
     .querySelector('.add-comment-form')
-    .addEventListener('submit', commentFormHandler);
+    .addEventListener('submit', newCommentFormHandler);
 
 document
     .querySelector('.comment-form')
-    .addEventListener('submit', removeCommentHandler);
+    .addEventListener('submit', deleteCommentHandler);
