@@ -2,32 +2,32 @@ const { User } = require('../models');
 
 const userData = [
     {
-        email: 'red@colorsoftherainbow.com',
-        password: 'bleed red',
+        "email": 'red@colorsoftherainbow.com',
+        "password": 'bleed red',
     },
     {
-        email: 'orange@colorsoftherainbow.com',
-        password: 'bleed orange',
+        "email": 'orange@colorsoftherainbow.com',
+        "password": 'bleed orange',
     },
     {
-        email: 'yellow@colorsoftherainbow.com',
-        password: 'bleed yellow',
+        "email": 'yellow@colorsoftherainbow.com',
+        "password": 'bleed yellow',
     },
     {
-        email: 'green@colorsoftherainbow.com',
-        password: 'bleed green',
+        "email": 'green@colorsoftherainbow.com',
+        "password": 'bleed green',
     },
     {
-        email: 'blue@colorsoftherainbow.com',
-        password: 'bleed blue',
+        "email": 'blue@colorsoftherainbow.com',
+        "password": 'bleed blue',
     },
     {
-        email: 'indigo@colorsoftherainbow.com',
-        password: 'bleed indigo',
+        "email": 'indigo@colorsoftherainbow.com',
+        "password": 'bleed indigo',
     },
     {
-        email: 'violet@colorsoftherainbow.com',
-        password: 'bleed violet',
+        "email": 'violet@colorsoftherainbow.com',
+        "password": 'bleed violet',
     },
 ];
 
