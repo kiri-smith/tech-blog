@@ -3,20 +3,11 @@
 
     <p><a class="createNewPost" href="/create">Create New Post</a></p>
 
- {{#each posts as |Post|}}
-<div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{post.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
-</div>
-
-   
+    <div id="accordion">
+        {{#each posts as |Post|}}
+        <div class="text-center">
+            <h2>{{post.title}}</h2>
+            <p>{{{post.body}}}</p>
+            <p>Created by {{post.user.email}} on {{format_date date_created}}</p>
+        </div>
+    </div>
