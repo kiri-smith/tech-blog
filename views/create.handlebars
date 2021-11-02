@@ -1,0 +1,19 @@
+<div class="modal-body">
+    <div class="form-group">
+        <label for="post-title" class="col-form-label">Title:</label>
+        <input class="form-control" id="post-title" value="{{title}}"></input>
+    </div>
+
+    <form>
+        <div class="form-group">
+            <label for="post-title">Title:</label>
+            <input type="title" class="form-control" id="post-title" value="{{title}}"></input>
+        </div>
+        <label for="post-body">Example textarea</label>
+        <textarea class="form-control" id="post-body" rows="1">{{content}}</textarea>
+</div>
+<button type="button" class="btn btn-primary" data-id="{{id}}">Add Post</button>
+<button type="button" class="btn btn-primary" data-id="{{id}}">Delete Post</button>
+</form>
+
+<script src="/js/post.js"></script>
